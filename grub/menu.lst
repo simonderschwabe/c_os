@@ -1,0 +1,5 @@
+timeout=1
+
+title c/OS
+kernel /grub/kernel.bin
+boot
