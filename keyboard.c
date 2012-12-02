@@ -48,7 +48,8 @@ unsigned char kbdde[128] =
  * Name:
  *	irq_keyboard_handler
  * Description:
- * 	Handles Keyboard interrupts	
+ * 	Handles Keyboard interrupts and calls lineBuffer function
+ *      for further processing of typed key	
  * Parameter:
  * ReturnValue:
  *
