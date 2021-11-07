@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/usr/sbin/grub --batch --device-map=/dev/null << EOF
+scripts/bin/grub --batch --device-map=/dev/null << EOF
 device (fd0) floppy.img
 root (fd0)
 setup (fd0)

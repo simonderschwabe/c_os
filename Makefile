@@ -15,7 +15,7 @@ LD_OBJ 	:= *.o
 LD_DBF	:= --print-map
 
 ### Other Tools
-VM    	:= qemu
+VM    	:= qemu-system-i386
 VM_OPT	:= -no-fd-bootchk -m 1G -boot a -fda 
 
 DD	:= dd
@@ -39,7 +39,7 @@ ISO_FILE	:= cdrom.iso
 MOUNT_TARGET 	:= /mnt
 MOUNT_OPT	:= -oloop
 GRUB_MENU_LST	:= $(GRUB)/menu.lst
-GRUB_STAGE_FILE := /usr/lib/grub/i386-pc/stage*
+GRUB_STAGE_FILE := grub/stage_files/stage*
 GRUB_FLOPPY_INIT:= scripts/grub_floppy_init.sh
 
 ### Default Task
